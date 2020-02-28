@@ -1,23 +1,21 @@
-$(function(){
-    //get dom elem
-    var $width = $('#width'),
-        $height = $('#height'),
-        $btn = $('#calculate'),
-        $per = $('#per'),
-        $area = $('#area');
-    //event
-    $btn.click(function(){
-        //get value
-        var w = parseFloat($width.val()),
-            h = parseFloat($height.val());
-        
-        //calculate
-        var p = 2 * (w + h),
-            a = w * h;
+$function() {
+  var $width = $('#width'),
+      $height = $('#height'),
+      $btnCal = $('#calculate'),
+      $perimeter = $('#perimeter'),
+      $area = $('#area');
 
-        //output
-        // Math.round(p * Math.pow(10, 2)) / Math.pow(10, 2)
-        $per.val(Math.round(p * Math.pow(10, 2)) / Math.pow(10, 2));
-        $area.val(a);
-    });
+  $btnCal.click(function(){
+    /*
+    var w = Number($width.val()),
+        h = Number($height.val());
+    var p = 2 * (w + h),
+        a = w * h;
+    $perimeter.val(p);
+    $area.val(a);
+    */
+    var rect = rectangle();
+    $perimeter.val(rect.perimeter($width.val(), $height.val()));
+    $area.val(rect.area($width.val(), $height.val()));
+  });
 });
