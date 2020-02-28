@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/zcq1933/grant-demo.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,12 +17,12 @@
   },
   "homepage": "https://github.com/zcq1933/grant-demo#readme",
   "devDependencies": {
+    "eslint": "^6.8.0",
     "grunt": "^1.0.4",
-    "grunt-contrib-less": "^2.0.0",
-    "grunt-htmlhint": "^0.9.13"
+    "grunt-eslint": "^22.0.0"
   },
   "dependencies": {
     "grunt": "^1.0.4",
-    "grunt-htmlhint": "^0.9.13"
+    "grunt-eslint": "^22.0.0"
   }
 }
