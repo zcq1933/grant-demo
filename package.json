@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/zcq1933/grant-demo#readme",
   "devDependencies": {
-    "eslint": "^6.8.0",
     "grunt": "^1.0.4",
     "grunt-eslint": "^22.0.0"
   },
